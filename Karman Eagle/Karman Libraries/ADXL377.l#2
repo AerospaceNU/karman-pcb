@@ -219,20 +219,6 @@
 <symbol name="ADXL377">
 <description>&lt;h3&gt;Analog Devices ADXL377 Low Power 3-Axis ±200 g Accelerometer with Analog Output&lt;/h3&gt;
 &lt;p&gt;The ADXL377 is a small, thin, low power, complete 3-axis accelerometer with signal conditioned voltage outputs. The ADXL377 measures acceleration resulting from motion, shock, or vibration with a typical full-scale range of ±200g.&lt;/p&gt;
-
-Note: Decoupling caps added at each of
-the xyz digital out pins implements a
-low-pass filter and bandwidth limiting.
-Recommended Filter Cap Selection
-(Analog Devices) (Also on Datasheet):
-Bandwidth (Hz): &amp;nbsp;&amp;nbsp; Cap. (uF): &lt;br&gt;
-50&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;0.10 &lt;br&gt;
-100&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;0.05&lt;br&gt;
-200&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 0.025&lt;br&gt;
-500&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 0.01&lt;br&gt;
-1000&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;0.005&lt;br&gt;
-
-
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/ADXL377.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="0" y1="15.24" x2="20.32" y2="15.24" width="0.254" layer="94"/>
 <wire x1="20.32" y1="15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
@@ -248,6 +234,17 @@ Bandwidth (Hz): &amp;nbsp;&amp;nbsp; Cap. (uF): &lt;br&gt;
 <pin name="VS@1" x="-2.54" y="12.7" length="short"/>
 <pin name="GND@2" x="-2.54" y="2.54" length="short"/>
 <pin name="VS@2" x="-2.54" y="10.16" length="short"/>
+<text x="0" y="21.59" size="1.6764" layer="97">Note: Decoupling caps added at each of
+the xyz digital out pins implements a
+low-pass filter and bandwidth limiting.
+Recommended Filter Cap Selection
+(Analog Devices) (Also on Datasheet):
+Bandwidth (Hz):     Cap. (uF):
+50                        0.10
+100                      0.05
+200                      0.025
+500                      0.01
+1000                    0.005</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -290,4 +287,10 @@ Bandwidth (Hz): &amp;nbsp;&amp;nbsp; Cap. (uF): &lt;br&gt;
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

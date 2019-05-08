@@ -248,6 +248,17 @@ Bandwidth (Hz): &amp;nbsp;&amp;nbsp; Cap. (uF): &lt;br&gt;
 <pin name="VS@1" x="-2.54" y="12.7" length="short"/>
 <pin name="GND@2" x="-2.54" y="2.54" length="short"/>
 <pin name="VS@2" x="-2.54" y="10.16" length="short"/>
+<text x="0" y="21.59" size="1.6764" layer="97">Note: Decoupling caps added at each of
+the xyz digital out pins implements a
+low-pass filter and bandwidth limiting.
+Recommended Filter Cap Selection
+(Analog Devices) (Also on Datasheet):
+Bandwidth (Hz):     Cap. (uF):
+50                        0.10
+100                      0.05
+200                      0.025
+500                      0.01
+1000                    0.005</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -290,4 +301,10 @@ Bandwidth (Hz): &amp;nbsp;&amp;nbsp; Cap. (uF): &lt;br&gt;
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
