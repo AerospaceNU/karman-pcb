@@ -6902,8 +6902,9 @@ AeroSpaceNU Project Karman</text>
 <part name="C21" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="10 uF"/>
 <part name="C22" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="10 uF"/>
 <part name="R5" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="121Ω"/>
-<part name="R6" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="40kΩ"/>
+<part name="R6" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="5kΩ"/>
 <part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND35" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7265,6 +7266,9 @@ Bandwidth (Hz):     Cap. (uF):
 <instance part="GND30" gate="1" x="58.42" y="181.61" smashed="yes">
 <attribute name="VALUE" x="58.42" y="181.356" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="GND35" gate="1" x="10.16" y="91.44" smashed="yes" rot="R270">
+<attribute name="VALUE" x="9.906" y="91.44" size="1.778" layer="96" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7481,6 +7485,12 @@ Bandwidth (Hz):     Cap. (uF):
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="194.31" y1="149.86" x2="194.31" y2="148.59" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VSSA"/>
+<wire x1="22.86" y1="92.71" x2="12.7" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+<wire x1="12.7" y1="92.71" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL1_PB8" class="0">
 <segment>
@@ -7611,6 +7621,11 @@ Bandwidth (Hz):     Cap. (uF):
 <wire x1="43.18" y1="205.74" x2="39.37" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="196.85" x2="43.18" y2="205.74" width="0.1524" layer="91"/>
 <junction x="43.18" y="205.74"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VREF+"/>
+<wire x1="22.86" y1="90.17" x2="19.05" y2="90.17" width="0.1524" layer="91"/>
+<label x="19.05" y="90.17" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI1_PA7" class="0">

@@ -6899,10 +6899,10 @@ AeroSpaceNU Project Karman</text>
 <part name="R12" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="10kΩ"/>
 <part name="GND29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="U$6" library="LM1085" deviceset="LM1085" device=""/>
-<part name="C21" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="4.7uF"/>
+<part name="C21" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="10 uF"/>
 <part name="C22" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="10 uF"/>
-<part name="R5" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="40kΩ"/>
-<part name="R6" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="40kΩ"/>
+<part name="R5" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="121Ω"/>
+<part name="R6" library="CRGH0603F221K" deviceset="CRGH0603F221K" device="" value="5kΩ"/>
 <part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -7612,6 +7612,11 @@ Bandwidth (Hz):     Cap. (uF):
 <wire x1="43.18" y1="196.85" x2="43.18" y2="205.74" width="0.1524" layer="91"/>
 <junction x="43.18" y="205.74"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VREF+"/>
+<wire x1="22.86" y1="90.17" x2="19.05" y2="90.17" width="0.1524" layer="91"/>
+<label x="19.05" y="90.17" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MOSI1_PA7" class="0">
 <segment>
@@ -8264,6 +8269,12 @@ Bandwidth (Hz):     Cap. (uF):
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="82.55" y1="194.31" x2="82.55" y2="205.74" width="0.1524" layer="91"/>
 <junction x="82.55" y="205.74"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VSSA"/>
+<wire x1="22.86" y1="92.71" x2="16.51" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
