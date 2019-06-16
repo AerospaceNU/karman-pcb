@@ -86,6 +86,8 @@
 <pad name="P$7" x="6.325" y="4.15" drill="1.016"/>
 <pad name="P$8" x="4.325" y="4.15" drill="1.016"/>
 <pad name="P$9" x="2.325" y="4.15" drill="1.016"/>
+<text x="0" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

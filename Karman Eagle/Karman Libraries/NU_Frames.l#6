@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -191,7 +191,7 @@
 <text x="2.54" y="21.59" size="3.81" layer="94" font="vector">Northeastern University
 AeroSpaceNU Project Karman</text>
 <text x="91.44" y="5.08" size="2.54" layer="94" font="vector">&gt;REV</text>
-<text x="16.51" y="6.35" size="2.54" layer="94" font="vector">&gt;DRAFTER</text>
+<text x="16.51" y="6.35" size="2.54" layer="95" font="vector">&gt;DRAFTER</text>
 <wire x1="0" y1="33.02" x2="0" y2="43.18" width="0.1016" layer="94"/>
 <wire x1="0" y1="43.18" x2="101.6" y2="43.18" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="43.18" x2="101.6" y2="33.02" width="0.1016" layer="94"/>
@@ -213,7 +213,7 @@ AeroSpaceNU Project Karman</text>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DRAFTER" value="&gt;DRAFTER" constant="no"/>
+<attribute name="DRAFTER" value="" constant="no"/>
 <attribute name="REV" value="" constant="no"/>
 <attribute name="STATUS" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>

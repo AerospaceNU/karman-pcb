@@ -86,10 +86,10 @@
 <dimension x1="0" y1="0" x2="1.9" y2="0" x3="0.95" y3="-1.2" textsize="0.3048" layer="47" width="0.05"/>
 <dimension x1="0" y1="0" x2="0" y2="0.5" x3="-1.2" y3="0.25" textsize="0.3048" layer="47" width="0.05"/>
 <dimension x1="0.5" y1="1.5" x2="1.4" y2="1.5" x3="0.95" y3="2.5" textsize="0.3048" layer="47" width="0.05"/>
-<wire x1="0" y1="1.9" x2="0" y2="0" width="0.1016" layer="21"/>
-<wire x1="0" y1="0" x2="1.9" y2="0" width="0.1016" layer="21"/>
-<wire x1="1.9" y1="0" x2="1.9" y2="1.9" width="0.1016" layer="21"/>
-<wire x1="1.9" y1="1.9" x2="0" y2="1.9" width="0.1016" layer="21"/>
+<wire x1="0" y1="1.7" x2="0" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="0" y1="-0.2" x2="1.9" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="1.9" y1="-0.2" x2="1.9" y2="1.7" width="0.1016" layer="21"/>
+<wire x1="1.9" y1="1.7" x2="0" y2="1.7" width="0.1016" layer="21"/>
 </package>
 </packages>
 <symbols>

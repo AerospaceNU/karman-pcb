@@ -90,14 +90,14 @@
 </packages>
 <symbols>
 <symbol name="MS5607-02BA03">
-<pin name="VDD" x="-5.08" y="10.16" length="middle"/>
-<pin name="PS" x="-5.08" y="7.62" length="middle"/>
-<pin name="GND" x="-5.08" y="5.08" length="middle"/>
-<pin name="CSB" x="-5.08" y="2.54" length="middle"/>
-<pin name="SDO@1" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="SDO@2" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="-5.08" y="10.16" length="middle" direction="pwr"/>
+<pin name="PS" x="-5.08" y="7.62" length="middle" direction="in"/>
+<pin name="GND" x="-5.08" y="5.08" length="middle" direction="pwr"/>
+<pin name="CSB" x="-5.08" y="2.54" length="middle" direction="in"/>
+<pin name="SDO@1" x="25.4" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="SDO@2" x="25.4" y="5.08" length="middle" direction="out" rot="R180"/>
 <pin name="SDI/SDA" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="SCLK" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="SCLK" x="25.4" y="10.16" length="middle" direction="in" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
 <wire x1="0" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="94"/>
 <wire x1="20.32" y1="12.7" x2="20.32" y2="0" width="0.254" layer="94"/>

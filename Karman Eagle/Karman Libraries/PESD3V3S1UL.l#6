@@ -90,8 +90,8 @@
 <symbol name="PESD3V3S1UL">
 <description>&lt;p&gt;PESD3V3S1UL Zener Diode&lt;/p&gt;
 &lt;p&gt;Made by David Antaki&lt;/p&gt;</description>
-<pin name="CA" x="-5.08" y="2.54" length="middle"/>
-<pin name="AN" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="CA" x="-2.54" y="2.54" length="middle"/>
+<pin name="AN" x="12.7" y="2.54" length="middle" rot="R180"/>
 <text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <wire x1="2.54" y1="5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>

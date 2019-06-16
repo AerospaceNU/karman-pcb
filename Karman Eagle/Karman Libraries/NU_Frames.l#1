@@ -190,7 +190,7 @@
 <text x="11.43" y="13.97" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="2.54" y="21.59" size="3.81" layer="94" font="vector">Northeastern University
 AeroSpaceNU Project Karman</text>
-<text x="91.44" y="5.08" size="2.54" layer="94" font="vector">&gt;REV</text>
+<text x="97.79" y="6.35" size="2.54" layer="94" font="vector">&gt;REV</text>
 <text x="16.51" y="6.35" size="2.54" layer="94" font="vector">&gt;DRAFTER</text>
 <wire x1="0" y1="33.02" x2="0" y2="43.18" width="0.1016" layer="94"/>
 <wire x1="0" y1="43.18" x2="101.6" y2="43.18" width="0.1016" layer="94"/>
@@ -203,7 +203,7 @@ AeroSpaceNU Project Karman</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="KARMAN_FRAME_L">
+<deviceset name="KARMAN_FRAME_L" uservalue="yes">
 <description>FRAME A Size , 8 1/2 x 11 INCH, Landscape</description>
 <gates>
 <gate name="G$1" symbol="NU_FRAME_L" x="0" y="0"/>

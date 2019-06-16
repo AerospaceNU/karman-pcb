@@ -191,7 +191,7 @@
 <text x="2.54" y="21.59" size="3.81" layer="94" font="vector">Northeastern University
 AeroSpaceNU Project Karman</text>
 <text x="91.44" y="5.08" size="2.54" layer="94" font="vector">&gt;REV</text>
-<text x="16.51" y="6.35" size="2.54" layer="95" font="vector">&gt;DRAFTER</text>
+<text x="16.51" y="6.35" size="2.54" layer="94" font="vector">&gt;DRAFTER</text>
 <wire x1="0" y1="33.02" x2="0" y2="43.18" width="0.1016" layer="94"/>
 <wire x1="0" y1="43.18" x2="101.6" y2="43.18" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="43.18" x2="101.6" y2="33.02" width="0.1016" layer="94"/>

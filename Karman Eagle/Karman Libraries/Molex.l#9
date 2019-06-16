@@ -74,18 +74,18 @@
 <library>
 <packages>
 <package name="87831-0819">
-<pad name="P$1" x="2.37" y="2.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$1" x="2.325" y="2.15" drill="1.016" diameter="1.8796"/>
 <wire x1="0" y1="0" x2="0" y2="6.3" width="0.127" layer="21"/>
 <wire x1="0" y1="6.3" x2="10.65" y2="6.3" width="0.127" layer="21"/>
 <wire x1="10.65" y1="6.3" x2="10.65" y2="0" width="0.127" layer="21"/>
 <wire x1="10.65" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$3" x="4.37" y="2.15" drill="1.016" diameter="1.8796"/>
-<pad name="P$4" x="6.37" y="2.15" drill="1.016" diameter="1.8796"/>
-<pad name="P$5" x="8.37" y="2.15" drill="1.016" diameter="1.8796"/>
-<pad name="P$6" x="8.37" y="4.15" drill="1.016" diameter="1.8796"/>
-<pad name="P$7" x="6.37" y="4.15" drill="1.016" diameter="1.8796"/>
-<pad name="P$8" x="4.37" y="4.15" drill="1.016" diameter="1.8796"/>
-<pad name="P$9" x="2.37" y="4.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$3" x="4.325" y="2.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$4" x="6.325" y="2.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$5" x="8.325" y="2.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$6" x="8.325" y="4.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$7" x="6.325" y="4.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$8" x="4.325" y="4.15" drill="1.016" diameter="1.8796"/>
+<pad name="P$9" x="2.325" y="4.15" drill="1.016" diameter="1.8796"/>
 </package>
 </packages>
 <symbols>

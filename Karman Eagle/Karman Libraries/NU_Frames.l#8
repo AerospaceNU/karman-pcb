@@ -213,7 +213,7 @@ AeroSpaceNU Project Karman</text>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DRAFTER" value="" constant="no"/>
+<attribute name="DRAFTER" value="&gt;DRAFTER" constant="no"/>
 <attribute name="REV" value="" constant="no"/>
 <attribute name="STATUS" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>

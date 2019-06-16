@@ -103,7 +103,13 @@
 <devicesets>
 <deviceset name="PESD3V3S1UL">
 <description>&lt;p&gt;PESD3V3S1UL Zener Diode&lt;/p&gt;
-&lt;p&gt;Made by David Antaki&lt;/p&gt;</description>
+&lt;p&gt;Made by David Antaki&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/nexperia-usa-inc/PESD3V3S1UL315/1727-5353-1-ND/2676832"&gt;Digikey&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=https://assets.nexperia.com/documents/data-sheet/PESDXS1UL_SER.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="PESD3V3S1UL" x="0" y="0"/>
 </gates>
