@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -74,20 +74,25 @@
 <library>
 <packages>
 <package name="87831-0819">
-<pad name="P$1" x="2.325" y="2.15" drill="1.016"/>
+<pad name="8" x="2.325" y="2.15" drill="1.016"/>
 <wire x1="0" y1="0" x2="0" y2="6.3" width="0.127" layer="21"/>
 <wire x1="0" y1="6.3" x2="10.65" y2="6.3" width="0.127" layer="21"/>
 <wire x1="10.65" y1="6.3" x2="10.65" y2="0" width="0.127" layer="21"/>
 <wire x1="10.65" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$3" x="4.325" y="2.15" drill="1.016"/>
-<pad name="P$4" x="6.325" y="2.15" drill="1.016"/>
-<pad name="P$5" x="8.325" y="2.15" drill="1.016"/>
-<pad name="P$6" x="8.325" y="4.15" drill="1.016"/>
-<pad name="P$7" x="6.325" y="4.15" drill="1.016"/>
-<pad name="P$8" x="4.325" y="4.15" drill="1.016"/>
-<pad name="P$9" x="2.325" y="4.15" drill="1.016"/>
+<pad name="7" x="4.325" y="2.15" drill="1.016"/>
+<pad name="6" x="6.325" y="2.15" drill="1.016"/>
+<pad name="5" x="8.325" y="2.15" drill="1.016"/>
+<pad name="1" x="8.325" y="4.15" drill="1.016"/>
+<pad name="2" x="6.325" y="4.15" drill="1.016"/>
+<pad name="3" x="4.325" y="4.15" drill="1.016"/>
+<pad name="4" x="2.325" y="4.15" drill="1.016"/>
 <text x="0" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 <text x="0" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="10.3" y="6.3"/>
+<vertex x="9.6" y="6.3"/>
+<vertex x="9.9" y="5.5"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -114,6 +119,18 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="087831-0819">
+<gates>
+<gate name="G$1" symbol="87831-0819" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

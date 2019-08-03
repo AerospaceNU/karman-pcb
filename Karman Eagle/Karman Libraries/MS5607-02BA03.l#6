@@ -117,7 +117,7 @@
 <gate name="G$1" symbol="MS5607-02BA03" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="TE_MS860702BA01-50">
 <technologies>
 <technology name=""/>
 </technologies>

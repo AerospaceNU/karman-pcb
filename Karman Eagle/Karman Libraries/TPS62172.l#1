@@ -122,7 +122,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TPS62172">
+<deviceset name="TPS62172" prefix="U">
 <gates>
 <gate name="G$1" symbol="TPS62172" x="0" y="0"/>
 </gates>

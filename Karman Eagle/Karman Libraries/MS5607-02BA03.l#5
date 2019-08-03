@@ -118,6 +118,16 @@
 </gates>
 <devices>
 <device name="" package="TE_MS860702BA01-50">
+<connects>
+<connect gate="G$1" pin="CSB" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="PS" pad="2"/>
+<connect gate="G$1" pin="SCLK" pad="8"/>
+<connect gate="G$1" pin="SDI/SDA" pad="7"/>
+<connect gate="G$1" pin="SDO@1" pad="5"/>
+<connect gate="G$1" pin="SDO@2" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

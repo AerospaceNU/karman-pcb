@@ -107,6 +107,8 @@
 <text x="1.27" y="1.27" size="1.27" layer="94">4</text>
 <text x="19.05" y="1.27" size="1.27" layer="94">5</text>
 <text x="19.05" y="10.16" size="1.27" layer="94">8</text>
+<text x="1.27" y="12.7" size="1.27" layer="95">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
