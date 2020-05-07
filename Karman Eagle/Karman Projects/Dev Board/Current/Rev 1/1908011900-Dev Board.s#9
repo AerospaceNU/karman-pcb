@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -7612,8 +7612,6 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <text x="-0.127" y="-1.143" size="0.508" layer="51">X</text>
 <text x="-0.762" y="0.127" size="0.508" layer="51">Z</text>
 <text x="1.27" y="0.127" size="0.508" layer="51">Y</text>
-<text x="0" y="1.778" size="0.6096" layer="25" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.778" size="0.6096" layer="27" ratio="20" align="top-center">&gt;VALUE</text>
 <circle x="-1.9" y="1.9" radius="0.254" width="0" layer="21"/>
 <smd name="1" x="-1.3" y="0.75" dx="0.4" dy="0.25" layer="1"/>
 <smd name="2" x="-1.3" y="0.25" dx="0.4" dy="0.25" layer="1"/>
@@ -7632,6 +7630,8 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <smd name="15" x="-0.25" y="1.3" dx="0.4" dy="0.25" layer="1" rot="R270"/>
 <smd name="16" x="-0.75" y="1.3" dx="0.4" dy="0.25" layer="1" rot="R270"/>
 <smd name="EXP" x="0" y="0" dx="1.6" dy="1.6" layer="1" stop="no" cream="no"/>
+<text x="-1.27" y="2.032" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<text x="-1.778" y="-3.048" size="1.27" layer="21" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -8466,11 +8466,12 @@ Made by David Antaki</description>
 <part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R17" library="0603_Resistor" deviceset="CRGH0603F221K" device=""/>
 <part name="R13" library="0603_Resistor" deviceset="CRGH0603F221K" device=""/>
-<part name="LD3" library="0805_LED" deviceset="0805_LED" device="" value="USB"/>
+<part name="LD3" library="0805_LED" deviceset="0805_LED" device="" value="U5V"/>
 <part name="GND21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C22" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="100nF"/>
 <part name="GND25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="S1" library="LL3301BF065QJ" deviceset="PUSHBUTTON" device="SKRPANE010" value="SKRPANE010"/>
+<part name="J14" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8576,12 +8577,12 @@ Made by David Antaki</description>
 <attribute name="VALUE" x="243.84" y="113.284" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="243.84" y="133.858" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J4" gate="G$1" x="182.88" y="67.31" smashed="yes" rot="R180">
-<attribute name="VALUE" x="187.96" y="74.676" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="187.96" y="59.182" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="J4" gate="G$1" x="233.68" y="87.63" smashed="yes" rot="R180">
+<attribute name="VALUE" x="238.76" y="94.996" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="238.76" y="79.502" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="GND13" gate="1" x="171.45" y="57.15" smashed="yes">
-<attribute name="VALUE" x="171.45" y="56.896" size="1.778" layer="96" align="top-center"/>
+<instance part="GND13" gate="1" x="222.25" y="77.47" smashed="yes">
+<attribute name="VALUE" x="222.25" y="77.216" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND14" gate="1" x="41.91" y="8.89" smashed="yes">
 <attribute name="VALUE" x="41.91" y="8.636" size="1.778" layer="96" align="top-center"/>
@@ -8792,6 +8793,10 @@ Made by David Antaki</description>
 <attribute name="NAME" x="-17.78" y="66.04" size="1.27" layer="95"/>
 <attribute name="VALUE" x="-17.78" y="57.15" size="1.27" layer="96"/>
 </instance>
+<instance part="J14" gate="G$1" x="233.68" y="68.58" smashed="yes" rot="R180">
+<attribute name="VALUE" x="236.22" y="73.406" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="236.22" y="65.532" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8822,10 +8827,10 @@ Made by David Antaki</description>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="171.45" y1="59.69" x2="171.45" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="222.25" y1="80.01" x2="222.25" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="177.8" y1="62.23" x2="172.72" y2="62.23" width="0.1524" layer="91"/>
-<wire x1="171.45" y1="62.23" x2="172.72" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="82.55" x2="223.52" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="222.25" y1="82.55" x2="223.52" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -9037,8 +9042,8 @@ Made by David Antaki</description>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="177.8" y1="64.77" x2="172.72" y2="64.77" width="0.1524" layer="91"/>
-<label x="172.72" y="64.77" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="228.6" y1="85.09" x2="223.52" y2="85.09" width="0.1524" layer="91"/>
+<label x="223.52" y="85.09" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="41.91" y1="116.84" x2="41.91" y2="119.38" width="0.1524" layer="91"/>
@@ -9474,8 +9479,8 @@ Made by David Antaki</description>
 <net name="SWDIO_PA13" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="69.85" x2="172.72" y2="69.85" width="0.1524" layer="91"/>
-<label x="172.72" y="69.85" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="228.6" y1="90.17" x2="223.52" y2="90.17" width="0.1524" layer="91"/>
+<label x="223.52" y="90.17" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="113.03" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
@@ -9486,8 +9491,8 @@ Made by David Antaki</description>
 <net name="SWSLK_PA14" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="67.31" x2="172.72" y2="67.31" width="0.1524" layer="91"/>
-<label x="172.72" y="67.31" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="228.6" y1="87.63" x2="223.52" y2="87.63" width="0.1524" layer="91"/>
+<label x="223.52" y="87.63" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="102.87" y1="116.84" x2="102.87" y2="120.65" width="0.1524" layer="91"/>
@@ -9824,6 +9829,18 @@ Made by David Antaki</description>
 <label x="12.7" y="71.12" size="1.016" layer="95" rot="R90" xref="yes"/>
 <pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="S1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="P14_PE4" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="PE4"/>
+<wire x1="31.75" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<label x="27.94" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J14" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
+<label x="220.98" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -10971,6 +10988,12 @@ Bandwidth (Hz):     Cap. (uF):
 <wire x1="67.31" y1="132.08" x2="67.31" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="BL_IND"/>
+<wire x1="200.66" y1="132.08" x2="200.66" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -10996,30 +11019,15 @@ Bandwidth (Hz):     Cap. (uF):
 <errors>
 <approved hash="102,1,123.19,200.66,GND,N$12,,,,"/>
 <approved hash="201,1,123.19,200.66,GND,GND\, N$12,,,,"/>
-<approved hash="202,2,46.99,177.8,U1,PIN1,,,,"/>
-<approved hash="204,2,87.63,177.8,U1,PIN21,,,,"/>
 <approved hash="104,2,92.71,132.08,U1,PIN15,GND,,,"/>
 <approved hash="104,2,105.41,147.32,U1,PIN16,GND,,,"/>
 <approved hash="104,2,67.31,177.8,U1,GNDIO,GND,,,"/>
 <approved hash="104,2,52.07,177.8,U1,VDDIO,3V3,,,"/>
-<approved hash="204,2,82.55,177.8,U1,PIN22,,,,"/>
-<approved hash="204,2,77.47,177.8,U1,PIN23,,,,"/>
-<approved hash="204,2,72.39,177.8,U1,PIN24,,,,"/>
-<approved hash="204,2,52.07,132.08,U1,PIN7,,,,"/>
-<approved hash="204,2,57.15,132.08,U1,PIN8,,,,"/>
 <approved hash="204,2,57.15,177.8,U1,XIN32,,,,"/>
-<approved hash="202,2,180.34,177.8,U3,PIN1,,,,"/>
-<approved hash="204,2,220.98,177.8,U3,PIN21,,,,"/>
 <approved hash="104,2,226.06,132.08,U3,PIN15,GND,,,"/>
 <approved hash="104,2,238.76,147.32,U3,PIN16,GND,,,"/>
 <approved hash="104,2,200.66,177.8,U3,GNDIO,GND,,,"/>
 <approved hash="104,2,185.42,177.8,U3,VDDIO,3V3,,,"/>
-<approved hash="204,2,215.9,177.8,U3,PIN22,,,,"/>
-<approved hash="204,2,210.82,177.8,U3,PIN23,,,,"/>
-<approved hash="204,2,205.74,177.8,U3,PIN24,,,,"/>
-<approved hash="204,2,185.42,132.08,U3,PIN7,,,,"/>
-<approved hash="204,2,190.5,132.08,U3,PIN8,,,,"/>
-<approved hash="204,2,190.5,177.8,U3,XIN32,,,,"/>
 <approved hash="104,2,102.87,31.75,U4,VDD,3V3,,,"/>
 <approved hash="202,2,102.87,24.13,U4,CSB,,,,"/>
 <approved hash="104,2,27.94,31.75,U5,VDD,3V3,,,"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -95,6 +95,7 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="noPrintText" color="7" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
 <layer number="119" name="LOGOS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -2629,7 +2630,7 @@ design rules under a new name.</description>
 <element name="U8" library="STM32F767VIT6" package="LQFP100_14X14" value="STM32F767VIT6" x="45.72" y="12.7" smashed="yes">
 <attribute name="NAME" x="37.874" y="19.911" size="0.8" layer="25"/>
 </element>
-<element name="C35" library="CGA3E2X7R1H104K080AD" package="CAPC1608X95N" value="8pF" x="29.718" y="14.478" smashed="yes" rot="R90">
+<element name="C35" library="CGA3E2X7R1H104K080AD" package="CAPC1608X95N" value="4pF" x="29.718" y="14.478" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="Unavailable" x="29.718" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value=" CGA Series 0603 0.1 uF 50 V ±10% X7R SMT Multilayer Ceramic Capacitor " x="29.718" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TDK" x="29.718" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2638,7 +2639,7 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="0603 TDK" x="29.718" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PRICE" value="None" x="29.718" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C36" library="CGA3E2X7R1H104K080AD" package="CAPC1608X95N" value="8pF" x="29.718" y="11.176" smashed="yes" rot="R270">
+<element name="C36" library="CGA3E2X7R1H104K080AD" package="CAPC1608X95N" value="4pF" x="29.718" y="11.176" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="Unavailable" x="29.718" y="11.176" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value=" CGA Series 0603 0.1 uF 50 V ±10% X7R SMT Multilayer Ceramic Capacitor " x="29.718" y="11.176" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="TDK" x="29.718" y="11.176" size="1.778" layer="27" rot="R270" display="off"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -8437,11 +8437,11 @@ Made by David Antaki</description>
 <part name="U6" library="TSX-3225 16.0000MF09Z-AC0" deviceset="TSX-3225" device=""/>
 <part name="U7" library="TPS62172" deviceset="TPS62172" device=""/>
 <part name="U8" library="STM32F767VIT6" deviceset="STM32F767VIT6" device=""/>
-<part name="C35" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="8pF"/>
+<part name="C35" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="4pF"/>
 <part name="GND40" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND41" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND42" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="C36" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="8pF"/>
+<part name="C36" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="4pF"/>
 <part name="U$1" library="NU_Frames" deviceset="KARMAN_FRAME_L" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C9" library="CGA3E2X7R1H104K080AD" deviceset="CGA3E2X7R1H104K080AD" device="" value="100nF"/>
@@ -8536,6 +8536,10 @@ Made by David Antaki</description>
 <wire x1="187.96" y1="171.45" x2="187.96" y2="167.64" width="0.1524" layer="97"/>
 <wire x1="187.96" y1="167.64" x2="199.39" y2="167.64" width="0.1524" layer="97"/>
 <text x="24.13" y="198.12" size="1.27" layer="97">Power Source Select</text>
+<text x="49.53" y="154.94" size="1.778" layer="97">LD2 suggested to be
+a red LED.</text>
+<text x="96.52" y="156.21" size="1.778" layer="97">LD3 suggested to be
+a red LED.</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="236.22" y="158.75" smashed="yes" rot="R180">
@@ -9921,11 +9925,15 @@ Bandwidth (Hz):     Cap. (uF):
 <wire x1="269.24" y1="69.85" x2="205.74" y2="69.85" width="0.1524" layer="97"/>
 <wire x1="257.81" y1="107.95" x2="257.81" y2="104.14" width="0.1524" layer="97"/>
 <wire x1="257.81" y1="104.14" x2="269.24" y2="104.14" width="0.1524" layer="97"/>
+<text x="165.1" y="48.26" size="1.778" layer="97">R13 value depends on
+LED voltage drop and current.</text>
+<text x="205.74" y="53.34" size="1.778" layer="97">LD3 suggested to be
+a red LED.</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="39.37" y="139.7" smashed="yes">
-<attribute name="NAME" x="75.4303" y="173.2362" size="1.270659375" layer="95"/>
-<attribute name="VALUE" x="75.4093" y="137.8838" size="1.27248125" layer="96"/>
+<attribute name="NAME" x="95.7503" y="173.2362" size="1.270659375" layer="95"/>
+<attribute name="VALUE" x="95.7293" y="135.3438" size="1.27248125" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="59.69" y="186.69" smashed="yes">
 <attribute name="NAME" x="59.69" y="189.23" size="1.778" layer="95"/>
@@ -9963,8 +9971,8 @@ Bandwidth (Hz):     Cap. (uF):
 <attribute name="VALUE" x="29.972" y="124.46" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U3" gate="G$1" x="172.72" y="139.7" smashed="yes">
-<attribute name="NAME" x="208.7803" y="173.2362" size="1.270659375" layer="95"/>
-<attribute name="VALUE" x="208.7593" y="137.8838" size="1.27248125" layer="96"/>
+<attribute name="NAME" x="231.6403" y="173.2362" size="1.270659375" layer="95"/>
+<attribute name="VALUE" x="231.6193" y="135.3438" size="1.27248125" layer="96"/>
 </instance>
 <instance part="C11" gate="G$1" x="193.04" y="186.69" smashed="yes">
 <attribute name="NAME" x="193.04" y="189.23" size="1.778" layer="95"/>
@@ -10074,10 +10082,12 @@ Bandwidth (Hz):     Cap. (uF):
 <attribute name="VALUE" x="158.75" y="88.9" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U23" gate="G$1" x="151.13" y="74.93" smashed="yes" rot="R90">
-<attribute name="VALUE" x="153.67" y="74.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="148.59" y="67.31" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.67" y="67.31" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U24" gate="G$1" x="144.78" y="74.93" smashed="yes" rot="R90">
-<attribute name="VALUE" x="147.32" y="74.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="142.24" y="66.04" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="146.05" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R7" gate="G$1" x="129.54" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.0414" y="69.85" size="1.778" layer="95" rot="R90"/>
